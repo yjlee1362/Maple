@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    <title>new project</title>
+    <title>maple hunting clock</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <button id="clockOpen1">재획 (2시간)</button>
+    <button id="clockOpen1" class = "openingButton">재획 (2시간)</button>
     <div id="clockOne" class="back1">
         <div class="clockSystem">
             <h1 id="clockF"></h1>
@@ -20,10 +20,49 @@
             <button id="start1">시작</button>
             <button id="cheak1">멈춤 </button>
             <button id="closeClock1">닫기</button>
+            <button id="reset">재시작</button> 
         </div>
     </div>
 
-    <button id="reset" class="resetButton">전체초기화</button>
+    <button id="clockOpen2" class = "openingButton">경쿠,익골(30분)</button>
+    <div id="clockTwo" class="back1">
+        <div class="clockSystem">
+            <h1 id="clockS"></h1>
+            <h1 id="clockS1"></h1>
+           
+        </div>
+        <div class="buttonSystem">
+            <button id="start2">시작</button>
+            <button id="cheak2">멈춤 </button>
+            <button id="closeClock2">닫기</button>
+            <button id="reset2">재시작</button> 
+        </div>
+    </div>
+
+    <button id="clockOpen3" class = "openingButton">경뿌(25분 부터)</button>
+    <div id="clockThree" class="back1">
+        <div class="clockSystem">
+            <h1 id="clockT"></h1>
+            <h1 id="clockT1"></h1>
+           
+        </div>
+        <div class="buttonSystem">
+            <button id="start3">시작</button>
+            <button id="cheak3">멈춤 </button>
+            <button id="closeClock3">닫기</button>
+            <button id="reset3">재시작</button> 
+        </div>
+    </div>
+
+    <div id = "info" class = "infor">
+        재획 끝나기 전 10초 동안 <span style = "color:green">녹색</span><br>
+        경쿠 끝나면 전 10초 동안<span style = "color:blue">파란색</span><br>
+        경뿌 5분 전 부터 1분 간격으로 전 10초 동안<span style = "color:red">빨간색</span><br>
+        10초 동안 색이 바뀝니다.<br>
+        10초 간격이 겹칠 경우 점멸하듯이 색이 바뀝니다.<br>
+        경쿠와 경뿌 타이머는 한 사이클이 돈 후에는 재시작 버튼으로 실행해주세요<br>
+        추가 및 수정 사항요청은 yjlee1362@gmail.com 으로 부탁드립니다.
+    </div>
     <script src="app.js"></script>
 </body>
 
